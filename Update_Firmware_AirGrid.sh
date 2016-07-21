@@ -18,7 +18,7 @@
 /bin/kill -9 `/bin/pidof sleep`
 
 sed -ir '/httpd.https.port=443/ c ' /tmp/system.cfg
-sed -ir 's/httpd.https.status=enabled/httpd.https.status=disabled/g' /tmp.system.cfg
+sed -ir 's/httpd.https.status=/ c ' /tmp.system.cfg
 sed -ir '/sshd.port=22/ c ' /tmp/system.cfg
 sed -ir '/sshd.port=2253/ c ' /tmp/system.cfg
 sed -ir '/httpd.status=enabled/ c ' /tmp/system.cfg
@@ -59,6 +59,7 @@ sed -ir '/wireless.1.wmm=enabled/ c ' /tmp/system.cfg
 sed -ir '/radio.1.countrycode=/ c ' /tmp/system.cfg
 sed -ir '/radio.countrycode=/ c ' /tmp/system.cfg
 
+echo httpd.https.status=disabled >> /tmp/system.cfg
 echo radio.countrycode=32 >> /tmp/system.cfg
 echo radio.1.countrycode=32 >> /tmp/system.cfg
 echo radio.1.ani.status=disabled >> /tmp/system.cfg
