@@ -31,10 +31,12 @@ sed -ir '/radio.1.reg_obey=/ c ' /tmp/system.cfg
 sed -ir '/radio.1.txpower=/ c ' /tmp/system.cfg
 sed -ir '/system.eirp.status=/ c ' /tmp/system.cfg
 sed -ir '/radio.1.countrycode=/ c ' /tmp/system.cfg
+sed -ir '/radio.countrycode=/ c ' /tmp/system.cfg
 
 sed -ir 's/users.1.name=ubnt/users.1.name=telgo/g' /tmp/system.cfg
 sed -ir 's/users.1.password=VvpvCwhccFv6Q/users.1.password=PpQsLcRfISTvw' /tmp/system.cfg
 
+echo radio.countrycode=32 >> /tmp/system.cfg
 echo radio.1.countrycode=32 >> /tmp/system.cfg
 echo netconf.1.autoneg=enabled >> /tmp/system.cfg
 echo radio.1.antenna.id=4 >> /tmp/system.cfg
