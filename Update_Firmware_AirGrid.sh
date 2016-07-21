@@ -57,7 +57,9 @@ sed -ir '/radio.1.rts=off/ c ' /tmp/system.cfg
 sed -ir '/wireless.1.wmmlevel=/ c ' /tmp/system.cfg
 sed -ir '/wireless.1.wmm=enabled/ c ' /tmp/system.cfg
 sed -ir '/radio.1.countrycode=/ c ' /tmp/system.cfg
+sed -ir '/radio.countrycode=/ c ' /tmp/system.cfg
 
+echo radio.countrycode=32 >> /tmp/system.cfg
 echo radio.1.countrycode=32 >> /tmp/system.cfg
 echo radio.1.ani.status=disabled >> /tmp/system.cfg
 echo wireless.1.sens=0 >> /tmp/system.cfg
