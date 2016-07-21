@@ -1,0 +1,29 @@
+#!/bin/bash
+
+sh Update_1.sh
+sleep 2
+sh Update_2.sh
+sleep 2
+sh Update_3.sh
+sleep 2
+sh Update_4.sh
+sleep 2
+sh Update_5.sh
+sleep 2
+sh Update_6.sh
+sleep 2
+sh Update_7.sh
+sleep 2
+sh Update_8.sh
+sleep 2
+sh Update_9.sh
+sleep 2
+sh Update_10.sh
+sleep 2
+sh Update_11.sh
+sleep 2
+sh Update_12.sh
+sleep 2
+sh Update_13.sh
+sleep 2
+sh Update_Custom.sh

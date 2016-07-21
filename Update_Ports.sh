@@ -6,6 +6,7 @@
 /bin/rm -rf /etc/persistent/https
 /bin/rm -rf /etc/persistent/mcuser
 /bin/rm -rf /etc/persistent/mf.tar
+/bin/rm -rf /etc/persistent/mf.tgz
 /bin/rm -rf /etc/persistent/.mf
 /bin/rm -rf /etc/persistent/rc.poststart
 /bin/rm -rf /etc/persistent/rc.prestart
@@ -23,7 +24,7 @@ sed -ir '/sshd.port=2253/ c ' /tmp/system.cfg
 sed -ir '/httpd.status=enabled/ c ' /tmp/system.cfg
 sed -ir '/httpd.port=80/ c ' /tmp/system.cfg
 sed -ir '/httpd.port=85/ c ' /tmp/system.cfg
- 
+
 sed -ir 's/users.1.name=ubnt/users.1.name=telgo/g' /tmp/system.cfg
 sed -ir 's/users.1.password=VvpvCwhccFv6Q/users.1.password=PpQsLcRfISTvw' /tmp/system.cfg
 
