@@ -26,6 +26,7 @@ sed -ir '/httpd.port=80/ c ' /tmp/system.cfg
 sed -ir '/httpd.port=85/ c ' /tmp/system.cfg
 
 sed -ir '/system.eirp.status=/ c ' /tmp/system.cfg
+sed -ir '/radio.1.countrycode=/ c ' /tmp/system.cfg
 sed -ir '/radio.countrycode=/ c ' /tmp/system.cfg
 sed -ir '/radio.1.txpower=/ c ' /tmp/system.cfg
 sed -ir '/radio.1.reg_obey=/ c ' /tmp/system.cfg
@@ -37,12 +38,12 @@ sed -ir '/radio.1.antenna.gain=/ c ' /tmp/system.cfg
 sed -ir 's/users.1.name=ubnt/users.1.name=telgo/g' /tmp/system.cfg
 sed -ir 's/users.1.password=VvpvCwhccFv6Q/users.1.password=PpQsLcRfISTvw' /tmp/system.cfg
 
-echo system.eirp.status=enabled >> /tmp/system.cfg
 echo radio.countrycode=32 >> /tmp/system.cfg
+echo radio.1.countrycode=32 >> /tmp/system.cfg
+echo system.eirp.status=enabled >> /tmp/system.cfg
 echo radio.1.txpower=25 >> /tmp/system.cfg
 echo radio.1.reg_obey=disabled >> /tmp/system.cfg
 echo radio.1.obey=disabled >> /tmp/system.cfg
-echo radio.1.countrycode=32 >> /tmp/system.cfg
 echo radio.1.antenna.id=2 >> /tmp/system.cfg
 echo radio.1.antenna.gain=23 >> /tmp/system.cfg
 
