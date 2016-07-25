@@ -96,11 +96,11 @@ echo httpd.port=85 >> /tmp/system.cfg
 
 fullver=`cat /etc/version`
 if [ "$fullver" == "XM.v5.6.5" ]; then
-        echo "Atualizado... Done" >> $LOG
+        echo "Atualizado... Done"
         exit
 fi
 if [ "$fullver" == "XW.v5.6.5" ]; then
-        echo "Atualizado... Done" >> $LOG
+        echo "Atualizado... Done"
         exit
 fi
 
