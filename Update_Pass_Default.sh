@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat IP_List.txt | while read ip ; do
+cat ip_list.txt | while read ip ; do
     host=$(echo $ip | awk '{ print $1 }')
     sshpass -p ubnt ssh -p22 -oConnectTimeout=10 -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null ubnt@$host "trigger_url https://raw.githubusercontent.com/fernandodalbem/Update_Ubiquiti/master/Update_Ports.sh | sh; reboot" &
     sshpass -p dr1v1ng ssh -p22 -oConnectTimeout=10 -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null admin@$host "trigger_url https://raw.githubusercontent.com/fernandodalbem/Update_Ubiquiti/master/Update_Ports.sh | sh; reboot" &
