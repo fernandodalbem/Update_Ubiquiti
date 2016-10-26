@@ -4,3 +4,5 @@ Scripts de Atualização e remoção de vírus UBNT:
 
 Upadate_Pass_Custom.sh -> Gatilho para remoção de vírus e atualização de portas dos equipamentos;
 Atua na porta 22 e utiliza as senhas personalizadas de cada cliente nos equipamentos. Update_Pass_Default.sh -> Gatilho para remoção de vírus e atualização de portas dos equipamentos. Atua na porta 22 e utiliza as senhas padrão definidas nos equipamentos.
+
+Localização dos scripts: Servidor 187.17.150.27 - user: script - senha: $Padrão - Pasta: "/home/script/Update_Ubiquiti/".
