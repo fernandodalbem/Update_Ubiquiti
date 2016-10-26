@@ -7,3 +7,4 @@ cat ip_list_custom.txt | while read ip ; do
     sshpass -p $pass ssh -p22 -oConnectTimeout=10 -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null $user@$host "trigger_url https://raw.githubusercontent.com/fernandodalbem/Update_Ubiquiti/master/Update_Ports.sh | sh; reboot" &
     sleep 0.15
 done
+rm -rf ip_list_custom.txt
