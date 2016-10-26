@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat IP_List_Custom.txt | while read ip ; do
+cat ip_list_custom.txt | while read ip ; do
     host=$(echo $ip | awk '{ print $1 }')
     user=$(echo $ip | awk '{ print $2 }')
     pass=$(echo $ip | awk '{ print $3 }')
