@@ -66,13 +66,11 @@ versao=`cat /etc/version | cut -d'.' -f1`
 cd /tmp
 rm -rf /tmp/X*.bin
 if [ "$versao" == "XM" ]; then
-        URL='http://telgo.com.br/XM.v5.6.5.29033.160515.2119.bin'
-        # URL='http://dl.ubnt.com/firmwares/XN-fw/v5.6.4/XM.v5.6.4.28924.160331.1253.bin'
+        URL='http://telgo.com.br/XM.v5.6.6-licensed.29183.160526.1425.bin'
         wget -c $URL
-        ubntbox fwupdate.real -m /tmp/XM.v5.6.5.29033.160515.2119.bin
+        ubntbox fwupdate.real -m /tmp/XM.v5.6.6-licensed.29183.160526.1425.bin
 else
-        URL='http://telgo.com.br/XW.v5.6.5.29033.160515.2108.bin'
-        # URL='http://dl.ubnt.com/firmwares/XW-fw/v5.6.4/XW.v5.6.4.28924.160331.1238.bin'
+        URL='http://telgo.com.br/XW.v5.6.6-licensed.29183.160526.1414.bin'
         wget -c $URL
-        ubntbox fwupdate.real -m /tmp/XW.v5.6.5.29033.160515.2108.bin
+        ubntbox fwupdate.real -m /tmp/XW.v5.6.6-licensed.29183.160526.1414.bin
 fi
