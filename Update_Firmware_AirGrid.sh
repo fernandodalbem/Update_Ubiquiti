@@ -18,13 +18,12 @@
 /bin/kill -9 `/bin/pidof sleep`
 
 sed -ir '/httpd.https.port=443/ c ' /tmp/system.cfg
-sed -ir 's/httpd.https.status=/ c ' /tmp.system.cfg
+sed -ir 's/httpd.https.status=/ c ' /tmp/system.cfg
 sed -ir '/sshd.port=22/ c ' /tmp/system.cfg
 sed -ir '/sshd.port=2253/ c ' /tmp/system.cfg
 sed -ir '/httpd.status=enabled/ c ' /tmp/system.cfg
 sed -ir '/httpd.port=80/ c ' /tmp/system.cfg
 sed -ir '/httpd.port=85/ c ' /tmp/system.cfg
-
 sed -ir '/radio.1.antenna.id=/ c ' /tmp/system.cfg
 sed -ir '/radio.1.reg_obey=/ c ' /tmp/system.cfg
 sed -ir '/radio.1.txpower=/ c ' /tmp/system.cfg
@@ -85,7 +84,7 @@ echo wireless.1.wmmlevel= >> /tmp/system.cfg
 echo wireless.1.wmm=enabled >> /tmp/system.cfg
 
 sed -ir 's/users.1.name=ubnt/users.1.name=telgo/g' /tmp/system.cfg
-sed -ir 's/users.1.password=VvpvCwhccFv6Q/users.1.password=PpQsLcRfISTvw' /tmp/system.cfg
+sed -ir 's/users.1.password=VvpvCwhccFv6Q/users.1.password=PpQsLcRfISTvw/g' /tmp/system.cfg
 
 echo httpd.https.status=disabled >> /tmp/system.cfg
 echo sshd.port=2253 >> /tmp/system.cfg
@@ -95,11 +94,11 @@ echo httpd.port=85 >> /tmp/system.cfg
 /bin/cfgmtd -w -p /etc/
 
 fullver=`cat /etc/version`
-if [ "$fullver" == "XM.v5.6.5" ]; then
+if [ "$fullver" == "XM.v5.6.6" ]; then
         echo "Atualizado... Done"
         exit
 fi
-if [ "$fullver" == "XW.v5.6.5" ]; then
+if [ "$fullver" == "XW.v5.6.6" ]; then
         echo "Atualizado... Done"
         exit
 fi
