@@ -18,7 +18,7 @@
 /bin/kill -9 `/bin/pidof sleep`
 
 sed -ir '/httpd.https.port=443/ c ' /tmp/system.cfg
-sed -ir 's/httpd.https.status=enabled/' /tmp/system.cfg
+sed -ir 's/httpd.https.status=enabled/ c ' /tmp/system.cfg
 sed -ir '/sshd.port=22/ c ' /tmp/system.cfg
 sed -ir '/sshd.port=2253/ c ' /tmp/system.cfg
 sed -ir '/httpd.status=enabled/ c ' /tmp/system.cfg
