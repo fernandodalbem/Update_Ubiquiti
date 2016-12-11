@@ -4,7 +4,6 @@ Update_Firmware.sh -> Gatilho para atualização de Firmware dos equipamentos. N
 
 Scripts de equipamentos: Update_Firmware_AirGrid.sh, Update_Firmware_LiteBean.sh, Update_Firmware_NanoLoco.sh.
 
-Upadate_Pass_Custom.sh -> Gatilho para remoção de vírus e atualização de portas dos equipamentos;
-Atua na porta 22 e utiliza as senhas personalizadas de cada cliente nos equipamentos. 
+Upadate_Pass_Custom.sh -> Gatilho para remoção de vírus e atualização de portas dos equipamentos. Atua na porta 22 e utiliza as senhas personalizadas de cada cliente nos equipamentos. 
 
 Update_Pass_Default.sh -> Gatilho para remoção de vírus e atualização de portas dos equipamentos. Atua na porta 22 e utiliza as senhas padrão definidas nos equipamentos.
