@@ -37,3 +37,4 @@ echo httpd.port=85 >> /tmp/system.cfg
 echo sshd.port=2253 >> /tmp/system.cfg
 
 /bin/cfgmtd -w -p /etc/
+reboot
