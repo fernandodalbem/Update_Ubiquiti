@@ -19,6 +19,7 @@
 
 sed -ir '/httpd.status=enabled/ c ' /tmp/system.cfg
 sed -ir '/httpd.https.status=enabled/ c ' /tmp/system.cfg
+sed -ir '/httpd.https.status=disabled/ c ' /tmp/system.cfg
 sed -ir '/httpd.https.port=443/ c ' /tmp/system.cfg
 sed -ir '/httpd.https.port=10443/ c ' /tmp/system.cfg
 sed -ir '/sshd.port=22/ c ' /tmp/system.cfg
