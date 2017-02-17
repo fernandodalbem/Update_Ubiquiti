@@ -29,10 +29,10 @@ sed -ir '/httpd.port=85/ c ' /tmp/system.cfg
 sed -ir 's/users.1.name=ubnt/users.1.name=telgo/g' /tmp/system.cfg
 sed -ir 's/users.1.password=VvpvCwhccFv6Q/users.1.password=PpQsLcRfISTvw/g' /tmp/system.cfg
 
-echo sshd.port=2253 >> /tmp/system.cfg
+echo httpd.status=enabled >> /tmp/system.cfg
 echo httpd.https.status=disabled >> /tmp/system.cfg
 echo httpd.https.port=10443 >> /tmp/system.cfg
-echo httpd.status=enabled >> /tmp/system.cfg
 echo httpd.port=85 >> /tmp/system.cfg
+echo sshd.port=2253 >> /tmp/system.cfg
 
 /bin/cfgmtd -w -p /etc/
